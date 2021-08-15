@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `Ana Helena's Blog`,
     description: `This is my blog`,
-    author: `@gatsbyjs`,
+    author: `@anahelenasilva`,
     siteUrl: `https://github.com/anahelenasilva/iamanahelena-blog`,
   },
   plugins: [
