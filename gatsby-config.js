@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Ana Helena's Blog`,
-    description: `This is my blog`,
-    author: `@anahelenasilva`,
+    title: `Ana Helena`,
+    position: `Desenvolvedora Fullstack`,
+    description: `Trabalho na MAG-IT e escrevo principalmente sobre desenvolvimento backend e docker.`,
     siteUrl: `https://github.com/anahelenasilva/iamanahelena-blog`,
   },
   plugins: [
