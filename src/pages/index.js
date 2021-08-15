@@ -17,7 +17,7 @@ const IndexPage = () => {
             frontmatter {
               background
               category
-              date(locale: "pt-br", formatString: "MMMM DD, YYYY")
+              date(formatString: "MMMM DD, YYYY")
               description
               title
             }
