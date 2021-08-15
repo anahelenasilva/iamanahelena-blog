@@ -6,6 +6,7 @@ module.exports = {
     siteUrl: `https://github.com/anahelenasilva/iamanahelena-blog`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-image`,
     {
