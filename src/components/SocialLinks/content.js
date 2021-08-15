@@ -10,6 +10,10 @@ const Links = [
     {
         label: "Instagram",
         url: "https://www.instagram.com/anassilvas"
+    },
+    {
+        label: "MailSend",
+        url: "mailto:anahelenarp@hotmail.com"
     }
 ]
 
