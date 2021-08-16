@@ -35,7 +35,7 @@ exports.createPages = ({ graphql, actions }) => {
             frontmatter {
               background
               category
-              date(formatString: "MMMM DD, YYYY")
+              date(locale: "pt-br", formatString: "DD [de] MMMM [de] YYYY")
               description
               title
             }
