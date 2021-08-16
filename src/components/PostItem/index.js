@@ -9,7 +9,7 @@ const PostItem = ({ slug, background, category, date, timeToRead, title, descrip
         <S.PostItemWrapper>
             <S.PostItemTag background={background}>{category}</S.PostItemTag>
             <S.PostItemInfo>
-                <S.PostItemDate>{date} • {timeToRead} min of time to read</S.PostItemDate>
+                <S.PostItemDate>{date} • {timeToRead} min read</S.PostItemDate>
                 <S.PostItemTitle>
                     {title}
                 </S.PostItemTitle>
