@@ -11,25 +11,25 @@ import * as S from "./styled"
 const MenuBar = () => (
   <S.MenuBarWrapper>
     <S.MenuBarGroup>
-      <S.MenuBarLink to="/" title="Voltar para Home">
+      <S.MenuBarLink to="/" title="Home">
         <S.MenuBarItem>
           <Home />
         </S.MenuBarItem>
       </S.MenuBarLink>
-      <S.MenuBarLink to="/search/" title="Pesquisar">
+      <S.MenuBarLink to="/search/" title="Search">
         <S.MenuBarItem>
           <Search />
         </S.MenuBarItem>
       </S.MenuBarLink>
     </S.MenuBarGroup>
     <S.MenuBarGroup>
-      <S.MenuBarItem title="Mudar o tema">
+      <S.MenuBarItem title="Change theme">
         <Light />
       </S.MenuBarItem>
-      <S.MenuBarItem title="Mudar visualização">
+      <S.MenuBarItem title="Change layout">
         <Grid />
       </S.MenuBarItem>
-      <S.MenuBarItem title="Ir para o Topo">
+      <S.MenuBarItem title="Top">
         <Arrow />
       </S.MenuBarItem>
     </S.MenuBarGroup>
