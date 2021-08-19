@@ -18,7 +18,7 @@ const Search = () => (
             apiKey={algolia.searchOnlyApiKey}
             indexName={algolia.indexName}
         >
-            <SearchBox autoFocus translations={{ placeholder: "Search..." }} />
+            <SearchBox autoFocus translations={{ placeholder: "Search here" }} />
             <Stats
                 translations={{
                     stats(nbHits, timeSpentMs) {
