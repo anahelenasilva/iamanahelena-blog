@@ -8,6 +8,7 @@ const postQuery = `{
           }
           frontmatter {
             title
+            background
             category
             date_timestamp: date
             date(formatString: "MMMM DD, YYYY")
@@ -20,22 +21,22 @@ const postQuery = `{
   }`
 
 const flatten = arr =>
-    arr.map(({ node: { frontmatter, ...rest } }) => ({
-        ...frontmatter,
-        date_timestamp: parseInt(
-            (new Date(frontmatter.date_timestamp).getTime() / 1000).toFixed(0)
-        ),
-        ...rest,
-    }))
+  arr.map(({ node: { frontmatter, ...rest } }) => ({
+    ...frontmatter,
+    date_timestamp: parseInt(
+      (new Date(frontmatter.date_timestamp).getTime() / 1000).toFixed(0)
+    ),
+    ...rest,
+  }))
 const settings = { attributesToSnippet: [`excerpt:20`] }
 
 const queries = [
-    {
-        query: postQuery,
-        transformer: ({ data }) => flatten(data.posts.edges),
-        indexName: `Posts`,
-        settings,
-    },
+  {
+    query: postQuery,
+    transformer: ({ data }) => flatten(data.posts.edges),
+    indexName: `Posts`,
+    settings,
+  },
 ]
 
 module.exports = queries
