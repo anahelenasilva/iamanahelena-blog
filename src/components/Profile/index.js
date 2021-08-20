@@ -5,7 +5,9 @@ import Avatar from "../Avatar";
 import * as S from "./styled"
 
 const Profile = () => {
-    const { site } = useStaticQuery(
+    const { site: {
+        siteMetadata: { title, position, description },
+    }, } = useStaticQuery(
         graphql`
             query MySiteMetadata {
                 site {
@@ -21,10 +23,14 @@ const Profile = () => {
 
     return (
         <S.ProfileWrapper>
-            <Avatar />
-            <S.ProfileAuthor>{site.siteMetadata.title}</S.ProfileAuthor>
-            <S.ProfilePosition>{site.siteMetadata.position}</S.ProfilePosition>
-            <S.ProfileDescription>{site.siteMetadata.description}</S.ProfileDescription>
+            <S.ProfileLink to="/" cover direction="left" bg="#16202c" duration={0.6}>
+                <Avatar />
+                <S.ProfileAuthor>
+                    {title}
+                    <S.ProfilePosition>{position}</S.ProfilePosition>
+                </S.ProfileAuthor>
+            </S.ProfileLink>
+            <S.ProfileDescription>{description}</S.ProfileDescription>
         </S.ProfileWrapper>
     );
 
