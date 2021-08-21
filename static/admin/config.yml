@@ -27,7 +27,7 @@ collections:
           label: "Category",
           name: "category",
           widget: "select",
-          options: ["docker", "css", "js", "html", "dev", "misc"],
+          options: ["docker", "js", ".net", ".net core", "dev", "misc"],
         }
       - {
           label: "Background",
@@ -37,10 +37,10 @@ collections:
             [
               { label: "Docker", value: "#2DA0C3" },
               { label: "JS", value: "#D6BA32" },
-              { label: "HTML", value: "#EB7728" },
-              { label: "CSS", value: "#7D669E" },
+              { label: ".NET", value: "#7AAB13" },
+              { label: ".NET Core", value: "#7D669E" },
               { label: "Dev", value: "#637a91" },
-              { label: "Misc", value: "#7AAB13" },
+              { label: "Misc", value: "#EB7728" },
             ],
         }
       - { label: "Body", name: "body", widget: "markdown" }
