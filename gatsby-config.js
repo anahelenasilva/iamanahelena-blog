@@ -7,7 +7,7 @@ module.exports = {
     title: `Ana Helena`,
     position: `Fullstack Developer`,
     description: `I work at MAG-IT, a software development consultant, and I like to write mostly about backend development and docker stuff.`,
-    siteUrl: `https://github.com/anahelenasilva/iamanahelena-blog`,
+    siteUrl: `iamanahelena-blog.netlify.app`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
