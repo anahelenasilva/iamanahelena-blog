@@ -99,19 +99,19 @@ Then add the following lines:
 
 `"eslint.codeActionsOnSave.mode": "all",`
 
-`    "eslint.validate": [`
+`"eslint.validate": [`
 
-`        "javascript",`
+`"javascript",`
 
-`        "javascriptreact",`
+`"javascriptreact",`
 
-`        "typescript",`
+`"typescript",`
 
-`        "typescriptreact",`
+`"typescriptreact",`
 
-`        "html",`
+`"html",`
 
-`    ],`
+`],`
 
 `// ...`
 
@@ -120,3 +120,43 @@ Then add the following lines:
 After that, everytime we same a file and there are any mistakes, they'll be automatically fixed :)
 
 But wait! There's a few more thing we need to do...
+
+The first thing is to edit the `.eslintrc.js` file with these lines:
+
+`rules: {`
+
+`'class-methods-use-this': 'off', // deactivate a rule that says that every method of a class needs the word this`
+
+`'no-param-reassign': 'off', // deactivate a rule that says that it's not allowed to recive a parameter and change it`
+
+`},`
+
+> There's no rule that says we can't deactivate those rules. It's up to the team to do so.
+
+## Install and configure Prettier
+
+The next step is to install Prettier and the additional ESLint plugins:
+`npm install eslint-config-prettier eslint-plugin-prettier --save-dev`
+
+After that install, we should add "prettier" in `extends` inside the `.eslintrc.js`file, so the file would be like this:
+
+`module.exports = {
+  env: {
+    es6: true,
+    node: true,
+  },
+  extends: ['airbnb-base', 'prettier'],
+  plugins: ['prettier'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  rules: {
+    'class-methods-use-this': 'off', // deactivate a rule that says that every method of a class needs the word this
+    'no-param-reassign': 'off', // deactivate a rule that says that it's not allowed to recive a parameter and change it
+  },
+};`
