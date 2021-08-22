@@ -187,6 +187,22 @@ Now we need to add a `.prettierrc` file with these:
     "singleQuote": true
 }`
 
-
-
 # Install and configure editorConfig
+
+Finally we're going to install editorConfig on VS Code. First add the editorConfig extension:
+
+![](assets/img/screenshot_12.png)
+
+Then, on the root of the project, right click and then *Generate .editorconfig:*
+
+![](assets/img/screenshot_13.png)
+
+Open the `.editorconfig` file and it should look like this:
+
+![](assets/img/screenshot_14.png)
+
+
+
+There you go! Now everyone that clones your project will have the same spacings and the same rules aplied to the files!
+
+Thanks for reading this! You can find me on linkedin at: [https://www.linkedin.com/in/anahelenasilva](https://www.linkedin.com/in/anahelenasilva)
