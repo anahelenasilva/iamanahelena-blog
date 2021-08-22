@@ -2,7 +2,7 @@ backend:
   name: github
   repo: anahelenasilva/iamanahelena-blog
   branch: main
-  site_domain: http://iamanahelena-blog.netlify.app/
+  site_domain: http://iamanahelena.com/
 
 publish_mode: editorial_workflow
 media_folder: "static/assets/img"
