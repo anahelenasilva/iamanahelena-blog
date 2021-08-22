@@ -201,8 +201,6 @@ Open the `.editorconfig` file and it should look like this:
 
 ![](assets/img/screenshot_14.png)
 
+There you go! Now everyone that clones your project will have the same spacings and the same rules aplied to the files! The code for this article can be found [here](https://github.com/anahelenasilva/nodejs-with-eslint-prettier-and-editorconfig). 
 
-
-There you go! Now everyone that clones your project will have the same spacings and the same rules aplied to the files!
-
-Thanks for reading this! You can find me on linkedin at: [https://www.linkedin.com/in/anahelenasilva](https://www.linkedin.com/in/anahelenasilva)
+Thanks for reading this! You can find me on linkedin at: <https://www.linkedin.com/in/anahelenasilva>
