@@ -113,14 +113,10 @@ export const MainContent = styled.section`
     `}
   }
   blockquote {
-    color: var(--texts);
+    color: var(--postColor);
     border-left: 0.3rem solid var(--highlight);
     padding: 0 1.875rem;
     margin: 3.125rem auto;
-
-    ${media.lessThan('large')`
-      margin-left: 1rem;
-    `}
   }
   hr {
     border: 1px solid var(--borders);
@@ -167,7 +163,7 @@ export const MainContent = styled.section`
   strong {
     font-weight: 700;
   }
-  .gatsby-resp-image-background-image {
+  /* .gatsby-resp-image-background-image {
     z-index: 2;
     opacity: 1 !important;
   }
@@ -181,7 +177,7 @@ export const MainContent = styled.section`
       opacity: 1;
       z-index: 3;
     }
-  }
+  } */
   .gatsby-highlight {
     padding: 0 1.6rem 1.6rem;
     ${media.lessThan("large")`
