@@ -3,7 +3,8 @@ backend:
   repo: anahelenasilva/iamanahelena-blog
   branch: main
   site_domain: http://iamanahelena-blog.netlify.app/
-  publish_mode: editorial_workflow
+
+publish_mode: editorial_workflow
 media_folder: "static/assets/img"
 public_folder: "assets/img"
 
