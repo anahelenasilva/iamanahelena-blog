@@ -140,23 +140,53 @@ The next step is to install Prettier and the additional ESLint plugins:
 
 After that install, we should add "prettier" in `extends` inside the `.eslintrc.js`file, so the file would be like this:
 
-`module.exports = {
-  env: {
-    es6: true,
-    node: true,
-  },
-  extends: ['airbnb-base', 'prettier'],
-  plugins: ['prettier'],
-  globals: {
-    Atomics: 'readonly',
-    SharedArrayBuffer: 'readonly',
-  },
-  parserOptions: {
-    ecmaVersion: 2018,
-    sourceType: 'module',
-  },
-  rules: {
-    'class-methods-use-this': 'off', // deactivate a rule that says that every method of a class needs the word this
-    'no-param-reassign': 'off', // deactivate a rule that says that it's not allowed to recive a parameter and change it
-  },
-};`
+`module.exports = {`
+
+`env: {`
+
+`es6: true,`
+
+`node: true,`
+
+`},`
+
+`extends: ['airbnb-base', 'prettier'],`
+
+`plugins: ['prettier'],`
+
+`globals: {`
+
+`Atomics: 'readonly',`
+
+`SharedArrayBuffer: 'readonly',`
+
+`},`
+
+`parserOptions: {`
+
+`ecmaVersion: 2018,`
+
+`sourceType: 'module',`
+
+`},`
+
+`rules: {`
+
+`'class-methods-use-this': 'off', // deactivate a rule that says that every method of a class needs the word this`
+
+`'no-param-reassign': 'off', // deactivate a rule that says that it's not allowed to recive a parameter and change it`
+
+`},`
+
+`};`
+
+Now we need to add a `.prettierrc` file with these:
+`{
+    "trailingComma": "none",
+    "semi": false,
+    "singleQuote": true
+}`
+
+
+
+# Install and configure editorConfig
