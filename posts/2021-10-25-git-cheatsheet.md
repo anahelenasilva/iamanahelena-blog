@@ -9,6 +9,7 @@ background: "#EB7728"
 ### Rename branch
 > `git branch -m <oldname> <newname>`
 
+
 ### Delete local branch
 > `git branch -d <name>`
 
